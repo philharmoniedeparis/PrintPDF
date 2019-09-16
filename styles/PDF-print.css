@@ -1,0 +1,542 @@
+@import "../../ui/skins/CIMU/mosaique.css";
+
+/************ Font *************/
+@font-face {
+  font-family: 'SourceSansPro-Regular';
+  src: url('http://drop.philharmoniedeparis.fr/fonts/SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+      url('http://drop.philharmoniedeparis.fr/fonts/SourceSansPro-Regular.woff') format('woff'),
+      url('http://drop.philharmoniedeparis.fr/fonts/SourceSansPro-Regular.ttf')  format('truetype'),
+      url('http://drop.philharmoniedeparis.fr/fonts/SourceSansPro-Regular.svg#SourceSansPro-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SourceSansPro-Semibold';
+  src: url('http://drop.philharmoniedeparis.fr/fonts/SourceSansPro-Semibold.eot?#iefix') format('embedded-opentype'),
+      url('http://drop.philharmoniedeparis.fr/fonts/SourceSansPro-Semibold.woff') format('woff'),
+      url('http://drop.philharmoniedeparis.fr/fonts/SourceSansPro-Semibold.ttf')  format('truetype'),
+      url('http://drop.philharmoniedeparis.fr/fonts/SourceSansPro-Semibold.svg#SourceSansPro-Semibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LinotypeBrewery-Regular';
+  src: url('http://drop.philharmoniedeparis.fr/fonts/LinotypeBrewery-Regular.eot?#iefix') format('embedded-opentype'),
+      url('http://drop.philharmoniedeparis.fr/fonts/LinotypeBrewery-Regular.otf')  format('opentype'),
+      url('http://drop.philharmoniedeparis.fr/fonts/LinotypeBrewery-Regular.woff') format('woff'),
+      url('http://drop.philharmoniedeparis.fr/fonts/LinotypeBrewery-Regular.ttf')  format('truetype'),
+      url('http://drop.philharmoniedeparis.fr/fonts/LinotypeBrewery-Regular.svg#LinotypeBrewery-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/************ Style général *************/
+
+#portal {
+  font-family: 'SourceSansPro-Regular', 'Arial', 'Helvetica', sans-serif;
+  color: #000000;
+  font-size: 15pt;
+  text-align: justify;
+}
+
+.frame {
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 0;
+}
+
+p + p, p + h3, p + figure, figure + p, p + h2, figure + h3, p + h4 {
+  margin-top: 12px;
+}
+
+strong, b {
+  font-family: 'SourceSansPro-SemiBold';
+}
+
+.inc-facteur dt, .inc-facture dt, .incontournable-extrait-musical, .incontournable-video, .definition, .soundcite-play:before, .popVideoExtrait:before, iframe, .topBarContainer, .fleche-menu-droite, video, .menu, .print-pdf, .rebond, .rebond-bleu, .rebond-blanc, .incontournable-rebond, .frame-ermes-searchcapturemultirender {
+  display: none;
+}
+
+/************ Titre *************/
+
+h1, h2, h3, h4 {
+  font-family: 'LinotypeBrewery-Regular';
+  page-break-after: avoid !important;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.content-oe-modele h2, h3, h4 {
+  font-size: 18pt;
+  margin-bottom: 16px;
+}
+
+.content-oe-modele .rubrique-oe h3 {
+  text-transform: uppercase;
+}
+
+h1, h2 {
+  text-transform: uppercase;
+  font-size: 22pt;
+}
+
+h1 {
+  text-align: center;
+}
+
+h4 {
+  margin-bottom: 10px;
+}
+
+span.sousTitre {
+  text-transform: none;
+  display: block;
+  font-size: 18pt;
+  margin: 1rem 0;
+}
+
+.content-oe-modele .only-content h3 {
+  text-transform: none;
+  margin-bottom: 0px; 
+}
+
+.presentation-oe {
+  text-align: center;
+  font-family: 'SourceSansPro-SemiBold';
+}
+
+.titre-page .presentation-oe {
+  font-family: 'LinotypeBrewery-Regular';
+  text-transform: uppercase;
+  font-size: 25pt;
+  font-weight: bold;
+}
+
+.presentation-oe:after, .content-oe-modele .presentation-oe:after {
+  content: '';
+  height: 1px;
+  width: 40px;
+  display: block;
+  margin: 0px auto;
+  background-color: #000;
+  margin-top: 10px;
+}
+
+.sous-titre-page h1 {
+  text-transform: none;
+  font-weight: normal;
+  font-size: 19pt;
+}
+
+.titre-page {
+  margin-bottom: 10px;
+}
+
+h2.expo-lieu-musee {
+  text-transform: none;
+}
+
+p.presentation-expo {
+  font-size: 22pt;
+  text-transform: uppercase;
+  font-family: 'LinotypeBrewery-Regular';
+}
+
+.content-img-gch h1 {
+  text-align: left;
+}
+/************ Incontournable *************/
+.incontournable-modele h4 {
+  font-family: 'LinotypeBrewery-Regular';
+  font-size: 15pt;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.incontournable-identite .incontournable-identite{
+  padding: 7px;
+  margin-bottom: 10px;
+}
+
+dl {
+  margin: 0;
+}
+
+.inc-inventaire dt {
+  font-weight: 700;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.inc-inventaire dd, .inc-facteur dd, .inc-facture dd {
+  display: inline;
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+/************ Tableau *************/
+
+.content-oe-modele table {
+  border-collapse: collapse;
+  font-size: 13pt;
+  text-align: left;
+}
+
+.content-oe-modele tr, .content-oe-modele td {
+  border:1px solid #b3d6fd !important;
+}
+
+.content-oe-modele td {
+  padding:0 10px;
+}
+
+.bckg-bleu {
+  padding: 12px !important;
+}
+
+/************ Bloc pistes de comparaison *************/
+
+.content-oe-modele .rubrique-oe .rubrique-oe {
+  border:1px solid #b3d6fd;
+}
+
+.panel-front, .panel-selection {
+  padding: 7px;
+  margin: 0;
+}
+
+ul {
+  margin: 0 0 5px;
+  padding: 0;
+}
+
+ul li {
+  padding-bottom: 5px;
+  margin-left: 10px;
+  list-style-image: url(http://digital.philharmoniedeparis.fr/ui/skins/CIMU/images/puces.png);
+}
+
+.only-content li {
+  margin-left: 20px;
+}
+
+.content-oe-modele .rubrique-oe li:last-child, .only-content li:last-child {
+  padding-bottom: 0px;
+}
+
+.line:after {
+  content: url(http://digital.philharmoniedeparis.fr/ui/skins/CIMU/images/pp-trait-separateur-noir.png);
+  display: block;
+}
+
+/************ Image *************/
+
+.frame img {
+  height: auto;
+  max-width: 100%;
+  width: 660px;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-size: 11pt;
+  font-style: italic;
+  padding: 0;
+  text-align: left;
+}
+
+figure {
+  width: 450px;
+}
+
+/** Image dans le texte **/
+.frame .content-img-dr, .frame .content-img-gch {
+  margin-bottom: 35px;
+}
+
+.content-oe-modele .content-img-dr figure {
+  float: right;
+  margin-left: 15px !important;
+}
+
+.content-oe-modele .content-img-gch figure {
+  float: left;
+  margin-right: 15px !important;
+}
+
+.content-oe-modele .content-img-gch figure, .content-oe-modele .content-img-dr figure {
+  margin: 12px 0 5px 0;
+  width: 250px;
+}
+
+/************ Break *************/
+
+.panel-heading {
+  page-break-after: avoid !important;
+}
+
+.panel-body {
+  page-break-before: avoid !important;
+}
+
+/************ Liens *************/
+
+a {
+  color: #000000;
+  cursor: auto;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.linkUrl {
+  font-size: 12pt;
+  margin-left: 5px;
+}
+
+.collapsed > .linkUrl, [rel~="metascore"] > .linkUrl, [data-toggle~="collapse"] .linkUrl, .mosaique .linkUrl {
+  display: none;
+}
+
+/************ Traduction *************/
+
+.content-oe-fourty {
+  width: 45%;
+  float: left;
+}
+.content-oe-sixty {
+  width: 55%;
+  float: left;
+}
+.content-oe-fourty > p, .content-oe-sixty > p {
+  margin: 0 20px 12px 0;
+}
+
+.content-oe-fifty {
+  width: 49.5%;
+  float: left;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+/************ Accordion *************/
+
+div.modele_6.model-html h3 {
+  margin-top:30px;
+}
+
+.SoundciteAudioGlobal {
+  padding: 10px 10px 5px 15px;
+  margin-bottom: 15px;
+  margin-top:10px;
+  border-left: 5px solid #b3d6fd;
+  font-style: italic;
+}
+
+.panel-collapse {
+  height: auto !important;
+}
+
+.modele_6 h4 {
+  font-size: 15pt;
+}
+
+.modele_6 p + h4 {
+  margin-top: 8px;
+}
+
+/************ Mosaique *************/
+
+.mosaique ul{
+  list-style-type: none;
+}
+
+.mosaique > article {
+  height: 460px;
+}
+
+.histoireinstru-modele #portal section.mosaique li {
+  margin: 4px;
+}
+
+.mosaique-forme, .mosaique-forme1, .mosaique-forme2 {
+  background-size: 242px;
+}
+
+.mosaique-forme a, .mosaique-forme1 a, .mosaique-forme2 a {
+  margin-top: 0px;
+  line-height: 20px;
+}
+
+.mosaique-forme a, .mosaique-forme1 a, .mosaique-forme2 a {
+  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 15pt;
+  text-transform: none;
+  position: absolute;
+  width: 228px;
+  height: max-content;
+  text-decoration: none;
+  padding: 10px 4px 20px;
+  overflow: hidden;
+}
+
+.mosaique-forme a::after, .mosaique-forme1 a::after, .mosaique-forme2 a::after {
+  display: none;
+}
+
+/************ Exposition *************/
+
+.applat {
+  border:1px solid #b3d6fd;
+}
+
+.applat ul{
+  list-style-type: none;
+  margin: 0 0 5px;
+  padding: 0;
+}
+
+/************ Citation *************/
+blockquote::before {
+  content: "\00AB\202F";
+  font-style: normal;
+}
+
+blockquote {
+  font-size: 13pt;
+  font-style: italic;
+  margin: 0;
+  border: 0;
+  margin-bottom: 12px;
+}
+
+/************ carousel *************/
+
+.royalSlider {
+  display: table;
+}
+
+.rs-ImgCarousel-textualCarousel .rsContent {
+  display: inline-block;
+  vertical-align: text-top;
+  width: 200px;
+  margin:10px;
+}
+
+.rsCaption {
+  font-size: 12pt;
+  text-align: left;
+}
+
+/************ Bloc fin *************/
+
+.see-more {
+  margin-top: 60px!important;
+  padding: 7px;
+  border:1px solid #b3d6fd;
+}
+
+.see-more a::after {
+  content: attr(href);
+  margin-left: 5px;
+  text-decoration: underline;
+}
+
+.see-more p{
+  width: 80%;
+  margin-right: 25px;
+  display: inline-block;
+}
+
+.see-more div {
+  text-align: center;
+}
+
+.see-more img{
+  vertical-align: top;
+  display: inline-block;
+}
+
+/************ Definition *************/
+
+#portal {
+  counter-reset: footnotes;
+}
+
+.dfn {
+  text-decoration: none;
+  counter-increment: footnotes;
+}
+
+.dfn::after {
+  content: '[' counter(footnotes) ']';
+  vertical-align: super;
+  font-size: 10pt;
+  margin-left: 2px;
+}
+
+.definition-content {
+  font-size: 13pt;
+}
+
+.definition-content li img {
+  width: 400px;
+  display: inherit;
+}
+
+.definition-content h4{
+  font-size: 15pt;
+  margin-bottom: 10px;
+}
+
+/************ Liste extraits *************/
+
+.list-extraits {
+  margin-top: 30px;
+  font-size: 13pt;
+}
+
+.list-extraits h4{
+  font-size: 15pt;
+  margin-bottom: 10px;
+}
+
+.list-extraits ol {
+  margin: 0;
+  padding: 0;
+}
+
+.list-extraits li span {
+  text-decoration: underline;
+}
+
+.list-extraits li {
+  padding-bottom: 5px;
+  margin-left: 10px;
+  list-style-image: url(http://digital.philharmoniedeparis.fr/ui/skins/CIMU/images/puces.png);
+}
+
+.list-extraits li:last-child {
+  padding-bottom: 0px;
+}
+
+.soundcite-play, .popVideoExtrait, .soundcite {
+  text-decoration: underline;
+}
+
+.see-more, .definition-content, .list-extraits {
+  margin-top: 30px;
+}
