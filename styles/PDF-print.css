@@ -57,7 +57,7 @@ strong, b {
   font-family: 'SourceSansPro-SemiBold';
 }
 
-.inc-facteur dt, .inc-facture dt, .incontournable-extrait-musical, .incontournable-video, .definition, .soundcite-play:before, .popVideoExtrait:before, iframe, .topBarContainer, .fleche-menu-droite, video, .menu, .print-pdf, .rebond, .rebond-bleu, .rebond-blanc, .incontournable-rebond, .frame-ermes-searchcapturemultirender {
+.inc-facteur dt, .inc-facture dt, .incontournable-extrait-musical, .incontournable-video, .definition, .soundcite-play:before, .popVideoExtrait:before, iframe, .topBarContainer, .fleche-menu-droite, video, .menu, .print-pdf, .rebond, .rebond-bleu, .rebond-blanc, .incontournable-rebond, .frame-ermes-searchcapturemultirender, .hideSaufPAD, .typeDoc-marqueur {
   display: none;
 }
 
